@@ -1,0 +1,50 @@
+body{
+  background-color: LavenderBlush;
+  text-align: center;
+}
+.mainDiv{
+  border: 2px solid LightGray;
+  display: flex;
+}
+.sub1{
+  border: 2px solid black;
+  margin: 1%;
+  padding: 2%;
+  text-align: center;
+}
+img{
+  width: 140px;
+}
+#a{
+  font-family: lucida calligraphy;
+  color: darkslategray;
+  font-size: 220%;
+}
+h1{
+  color: royalblue;
+  font-family: palatino linotype;
+  font-size: 150%;
+}
+@media only screen and (max-width:450px) {
+  .mainDiv{
+    border: 2px solid LightGray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:426px) and (max-width:768px)  {
+    .mainDiv{
+      border: 2px solid LightGray;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+}
+@media screen and (min-width:769px) and (max-width:1024px)  {
+  .mainDiv{
+    border: 2px solid LightGray;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
